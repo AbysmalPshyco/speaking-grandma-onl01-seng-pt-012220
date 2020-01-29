@@ -13,13 +13,14 @@
 # 'I LOVE YOU TOO PUMPKIN!'
 
 
-speak_to_grandma( "I LOVE YOU")
-if speak_to_grandma == "I LOVE YOU".upcase
-  puts "I LOVE YOU TOO PUMPKIN!".upcase
-elsif speak_to_grandma == "Hi grandma!".upcase
-  puts "HUH?! SPEAK UP, SONNY".upcase
-elsif speak_to_grandma == "WHEN WAS THE LAST TIME YOU HEARD ABOUT THE MUNICH PACT?".upcase
-  puts  "NO, NOT SINCE 1938".upcase
-else speak_to_grandma = "Bye grandma".upcase
-  puts "HUH?! SPEAK UP SONNY!".upcase
-end
+def speak_to_grandma(phrase)
+  
+  
+ if phrase == "I LOVE YOU GRANDMA!"
+   return "I LOVE YOU TOO PUMPKIN!"
+ elsif phrase == phrase.upcase
+   return "NO, NOT SINCE 1938!"
+ else 
+   return "HUH?! SPEAK UP, SONNY!".upcase
+   end
+ end
